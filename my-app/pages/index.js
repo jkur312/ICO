@@ -217,6 +217,7 @@ export default function Home() {
       if (address.toLowerCase() === _owner.toLowerCase()) {
         setIsOwner(true);
       }
+      window.alert("tried to get owner");
     } catch (err) {
       console.error(err.message);
     }
