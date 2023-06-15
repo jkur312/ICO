@@ -307,10 +307,15 @@ export default function Home() {
         disableInjectedProvider: false,
       });
       connectWallet();
+      console.log("wallet connected 1");
       getTotalTokensMinted();
+      console.log("Got total tokens minted");
       getBalanceOfCryptoDevTokens();
+      console.log("got balance of CryptoDevTokens");
       getTokensToBeClaimed();
+      console.log("got tokens to be claimed");
       getOwner();
+      console.log("got owner");
     }
   }, [walletConnected]);
 
